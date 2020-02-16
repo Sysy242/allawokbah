@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const generator = require("generate-password");
 const config = require("./config.js");
 
-client.login(config.token);
+client.login(process.env.TOKEN);
 
 const anim = require("chalk-animation");
 client.on("ready", () => {
