@@ -2,7 +2,7 @@
   "name": "nitro-discord",
   "version": "1.0.0",
   "description": "",
-  "main": "bot.js",
+  "main": "index.js",
   "dependencies": {
     "array-sort": "^1.0.0",
     "body-parser": "^1.19.0",
