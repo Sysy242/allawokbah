@@ -7,6 +7,9 @@ module.exports = {
     genGames: "678371126933454880",
     // The prefix of the bot
     prefix: "n!",
-    // Stream status
+    // Private Gen
+    caraklegames: "678910402607972352",
+
+    liliss93classic: "679011801115000865",
     status: "Free Nitro | https://discord.gg/99PxV7W"
 }
