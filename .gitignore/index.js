@@ -55,7 +55,7 @@ client.on("message", (message) => {
     }
 
     //Carakle
-    if(message.channel.id === config.genGames){
+    if(message.channel.id === config.caraklegames){
         message.delete(1);
         if(!message.content.startsWith(`${config.prefix}games-carakle`)) return message.delete();
         message.author.createDM().then((channel) => channel.send(getFake()));
@@ -71,7 +71,7 @@ client.on("message", (message) => {
     }
 
     //Liliss92
-    if(message.channel.id === config.genGames){
+    if(message.channel.id === config.liliss93classic){
         message.delete(1);
         if(!message.content.startsWith(`${config.prefix}classic-liliss93`)) return message.delete();
         message.author.createDM().then((channel) => channel.send(getFake()));
