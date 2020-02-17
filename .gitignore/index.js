@@ -54,4 +54,35 @@ client.on("message", (message) => {
           })
     }
 
+    //Carakle
+    if(message.channel.id === config.genGames){
+        message.delete(1);
+        if(!message.content.startsWith(`${config.prefix}games-carakle`)) return message.delete();
+        message.author.createDM().then((channel) => channel.send(getFake()));
+        return message.channel.send({ embed: { author: { name: "🚀 Regarde tes MPs! Ta reçu un Nitro Games" }, color: 0x7289DA }})
+        .then(msg => {
+            msg.delete(5000)
+          })
+    } else if(message.content.startsWith(`${config.prefix}games-carakle`)){
+        return message.channel.send(`Tu es pas dans le bon salon. Vas dans <#${config.caraklegames}>!`)
+        .then(msg => {
+            msg.delete(5000)
+          })
+    }
+
+    //Liliss92
+    if(message.channel.id === config.genGames){
+        message.delete(1);
+        if(!message.content.startsWith(`${config.prefix}classic-liliss93`)) return message.delete();
+        message.author.createDM().then((channel) => channel.send(getFake()));
+        return message.channel.send({ embed: { author: { name: "🚀 Regarde tes MPs! Ta reçu un Nitro Classic" }, color: 0x7289DA }})
+        .then(msg => {
+            msg.delete(5000)
+          })
+    } else if(message.content.startsWith(`${config.prefix}classic-liliss93`)){
+        return message.channel.send(`Tu es pas dans le bon salon. Vas dans <#${config.liliss93classic}>!`)
+        .then(msg => {
+            msg.delete(5000)
+          })
+    }
 });
